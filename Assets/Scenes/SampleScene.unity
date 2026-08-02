@@ -1038,7 +1038,7 @@ GameObject:
   - component: {fileID: 1767813709}
   m_Layer: 0
   m_Name: ProyectilSpawner
-  m_TagString: Untagged
+  m_TagString: spawnPro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1052,7 +1052,7 @@ Transform:
   m_GameObject: {fileID: 1767813707}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.24, y: -1.08, z: -10.195909}
+  m_LocalPosition: {x: 2.77, y: -1.08, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1071,7 +1071,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   proyectil: {fileID: 8217123546417965792, guid: 8b2c02fbf088fcc4f9adcbdff77b9395, type: 3}
-  isDead: 0
+  isDead: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
