@@ -14,6 +14,7 @@ public class ProyectilMover : MonoBehaviour
     void Start()
     {
         spawn = GameObject.FindGameObjectWithTag("spawnPro").GetComponent<ProyectilSpawn>();
+        
     }
 
     // Update is called once per frame
@@ -23,8 +24,9 @@ public class ProyectilMover : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D collision) //una vez sale si choca con algo se destruye y le digo al otro script que ya no existe con el isDead
-    {
-        Destroy(gameObject);
+    { //para que interactuen con un isTrigger algunos de los 2 debe tenerun rigidbody obligado
+        Debug.Log(collision.name);
+        Destroy(gameObject); 
         spawn.isDead = true;
     }
 }
